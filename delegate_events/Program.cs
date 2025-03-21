@@ -1,10 +1,11 @@
 ﻿namespace delegate_events
 {
-    internal class Program
+    public class Checker
     {
+        public Func<int[], int> Maximum = x => x.Max();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
         }
     }
 }
