@@ -1,10 +1,15 @@
 ﻿namespace delegate_events
 {
-    internal class Program
+    public class Checker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
         }
+        public Func<int, int> Cube = delegate (int number)
+        {
+            return number * number * number;
+        };
+
     }
 }
