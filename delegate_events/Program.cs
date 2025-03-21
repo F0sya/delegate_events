@@ -1,10 +1,15 @@
 ﻿namespace delegate_events
 {
-    internal class Program
+    public class Checker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
         }
+        public Predicate<int> isEven = delegate (int number)
+        {
+            return number % 2 == 0;
+        };
+
     }
 }
